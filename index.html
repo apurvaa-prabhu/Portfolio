@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apurvaa Prabhu's developer portfolio showcasing projects, skills, and contact information."
+    />
+    <title>Apurvaa Prabhu | Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header role="banner">
+      <nav role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="#hero" aria-label="Go to top of page">Apurvaa Prabhu</a>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="#about" role="menuitem">About</a></li>
+          <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <h1 id="hero-heading">Hi, I'm Apurvaa Prabhu</h1>
+          <p class="hero-subtitle">Full-Stack Developer &amp; Creative Problem Solver</p>
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About Me</h2>
+          <div class="about-content">
+            <figure class="about-image">
+              <img
+                src="https://via.placeholder.com/300x300?text=Profile+Photo"
+                alt="Portrait photo of Apurvaa Prabhu, developer"
+                width="300"
+                height="300"
+              />
+            </figure>
+            <div class="about-text">
+              <p>
+                I'm a passionate full-stack developer with a love for building elegant, user-friendly
+                web applications. I enjoy turning complex problems into simple, beautiful, and
+                intuitive solutions.
+              </p>
+              <p>
+                When I'm not coding, you'll find me exploring new technologies, contributing to
+                open-source projects, or enjoying a good book. I believe in writing clean,
+                maintainable code and continuously improving my craft.
+              </p>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading">Projects</h2>
+          <div class="project-filters" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
+          </div>
+          <div class="projects-grid" id="projects-grid">
+            <article class="project-card" data-category="web" aria-label="E-Commerce Platform project">
+              <figure class="project-image">
+                <img
+                  src="https://via.placeholder.com/400x250?text=E-Commerce+Platform"
+                  alt="Screenshot of the E-Commerce Platform showing a product listing page"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  A full-stack e-commerce application built with React, Node.js, and MongoDB.
+                  Features include user authentication, product management, and secure checkout.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View live demo of E-Commerce Platform"
+                  >Live Demo</a>
+                  <a
+                    href="#"
+                    class="btn btn-small btn-outline"
+                    aria-label="View source code of E-Commerce Platform on GitHub"
+                  >GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mobile" aria-label="Task Manager App project">
+              <figure class="project-image">
+                <img
+                  src="https://via.placeholder.com/400x250?text=Task+Manager+App"
+                  alt="Screenshot of the Task Manager App showing a list of tasks with completion checkboxes"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <h3>Task Manager App</h3>
+                <p>
+                  A cross-platform mobile app for task management built with React Native. Supports
+                  offline mode, push notifications, and cloud sync.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Redux</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View live demo of Task Manager App"
+                  >Live Demo</a>
+                  <a
+                    href="#"
+                    class="btn btn-small btn-outline"
+                    aria-label="View source code of Task Manager App on GitHub"
+                  >GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="data" aria-label="Data Dashboard project">
+              <figure class="project-image">
+                <img
+                  src="https://via.placeholder.com/400x250?text=Data+Dashboard"
+                  alt="Screenshot of the Data Dashboard displaying charts and analytics visualizations"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <h3>Data Dashboard</h3>
+                <p>
+                  An interactive analytics dashboard built with D3.js and Python Flask. Visualizes
+                  real-time data with dynamic charts, filters, and export capabilities.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">D3.js</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Flask</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View live demo of Data Dashboard"
+                  >Live Demo</a>
+                  <a
+                    href="#"
+                    class="btn btn-small btn-outline"
+                    aria-label="View source code of Data Dashboard on GitHub"
+                  >GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web" aria-label="Portfolio Website project">
+              <figure class="project-image">
+                <img
+                  src="https://via.placeholder.com/400x250?text=Portfolio+Website"
+                  alt="Screenshot of this portfolio website showing the home page"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <h3>Portfolio Website</h3>
+                <p>
+                  This responsive portfolio website built with vanilla HTML, CSS, and JavaScript.
+                  Demonstrates accessibility best practices and modern CSS techniques.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View live demo of Portfolio Website"
+                  >Live Demo</a>
+                  <a
+                    href="#"
+                    class="btn btn-small btn-outline"
+                    aria-label="View source code of Portfolio Website on GitHub"
+                  >GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading">Skills</h2>
+          <div class="skills-grid">
+            <div class="skills-category">
+              <h3>Frontend</h3>
+              <ul class="skills-list" aria-label="Frontend skills">
+                <li>HTML5 &amp; CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Vue.js</li>
+                <li>Responsive Design</li>
+                <li>Accessibility (WCAG)</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Backend</h3>
+              <ul class="skills-list" aria-label="Backend skills">
+                <li>Node.js &amp; Express</li>
+                <li>Python &amp; Flask</li>
+                <li>RESTful APIs</li>
+                <li>GraphQL</li>
+                <li>SQL &amp; PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Tools &amp; Practices</h3>
+              <ul class="skills-list" aria-label="Tools and practices skills">
+                <li>Git &amp; GitHub</li>
+                <li>Docker</li>
+                <li>CI/CD Pipelines</li>
+                <li>Agile / Scrum</li>
+                <li>Jest &amp; Testing</li>
+                <li>AWS Basics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Contact Me</h2>
+          <p class="contact-intro">
+            Have a project in mind or want to collaborate? I'd love to hear from you!
+          </p>
+          <form
+            id="contact-form"
+            novalidate
+            aria-label="Contact form"
+          >
+            <div class="form-group">
+              <label for="name">Full Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+                aria-required="true"
+                autocomplete="name"
+              />
+              <span class="error-message" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+                aria-required="true"
+                autocomplete="email"
+              />
+              <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is this about?"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about your project or inquiry..."
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="error-message" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Apurvaa Prabhu. All rights reserved.</p>
+        <nav aria-label="Social media links">
+          <ul class="social-links">
+            <li>
+              <a href="#" aria-label="Visit my GitHub profile" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Visit my LinkedIn profile" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Visit my Twitter profile" rel="noopener noreferrer">Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image lightbox"
+      aria-hidden="true"
+    >
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image lightbox">
+        &times;
+      </button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
