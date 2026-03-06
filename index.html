@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apurvaa Prabhu - Developer Portfolio" />
+    <title>Apurvaa Prabhu | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <nav role="navigation">
+        <h1>Apurvaa Prabhu</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu" onclick="toggleMenu()">&#9776;</button>
+        <ul id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://via.placeholder.com/150" alt="Profile photo of Apurvaa Prabhu" />
+      <p>Hi! I'm Apurvaa Prabhu, a passionate developer who loves building web applications. I enjoy solving problems and learning new technologies.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('mobile')">Mobile</button>
+      </div>
+
+      <div id="project-list">
+        <article class="project-card" data-category="web">
+          <figure>
+            <img src="https://via.placeholder.com/300x200" alt="Screenshot of the E-Commerce project" />
+            <figcaption>E-Commerce Platform</figcaption>
+          </figure>
+          <p>A full-stack e-commerce app built with React and Node.js.</p>
+          <a href="#">View Project</a>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <figure>
+            <img src="https://via.placeholder.com/300x200" alt="Screenshot of the Task Manager app" />
+            <figcaption>Task Manager App</figcaption>
+          </figure>
+          <p>A mobile task management app built with React Native.</p>
+          <a href="#">View Project</a>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <figure>
+            <img src="https://via.placeholder.com/300x200" alt="Screenshot of the Portfolio website" />
+            <figcaption>Portfolio Website</figcaption>
+          </figure>
+          <p>This portfolio site built with HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Apurvaa Prabhu. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
