@@ -8,8 +8,7 @@ const infoRows = [
   { key: "Location",        val: "Boston, MA" },
   { key: "Open to",         val: "United States" },
   { key: "Graduation",      val: "May 2026" },
-  { key: "Roles",           val: "SWE · ML Engineer · Full-Stack" },
-  { key: "Also managed by", val: "🐱 Ash (kitten, very demanding)" },
+  { key: "Roles",           val: "SWE · AI/ML Engineer · Full-Stack" },
 ];
 
 function useReveal() {
